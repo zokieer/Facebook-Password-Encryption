@@ -17,7 +17,7 @@ I realize using `frida-trace` without any information about target is an *******
 
 ```javascript
 Process.enumerateModules().forEach(m => {
-    Memory.scan(m.base, m.size, '23 50 57 44 5f 46 42 34 41', {   // "#PWD_FB4A"
+    Memory.scan(m.base, m.size, '23 51 56 44 5f 46 42 34 41', {   // "#PWD_FB4A"
         onMatch: a => console.log(m.name),
         onComplete: () => {}
     });
